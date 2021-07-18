@@ -59,7 +59,7 @@ App进程的binder线程（ApplicationThread）在收到请求后，通过handle
 
  onPause -> onSaveInstanceState -> onStop。
 
-
+onSaveInstanceState  android 28之前是在onStop之前， 28之后在onStop之后
 
 **onRestoreInstanceState(Bundle outState)会在以下情况被调用：**
 
